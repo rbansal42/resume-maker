@@ -1,0 +1,88 @@
+/* Importing Required fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html{
+    background-color: #313B47;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Header Elements */
+.header{
+    /* Alignment Properties */
+    display: flex;
+    position: sticky;
+
+    flex: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* Sizing Properties */
+    width: 100%;
+    margin: auto;
+}
+
+    /* Logo properties */
+    div#logo{
+        /* Alignment Properties */
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        /* Sizing Properties */
+        height: 36px;
+        
+        /* Font properties */
+        font-family: 'Ubuntu', sans-serif;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 2px;
+
+    }
+
+    div.logo > a#logo{
+        display: flex;
+        height: 100%;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        gap: 6px;
+    }
+
+    div.logo img{
+        height: 40px;
+    }
+
+    /* Download Button Properties */
+    div#menu{
+        display: flex;
+        padding: 6px 12px 6px 12px;
+        gap: 12px;
+
+        background-color: #425061;
+        border-radius: 16px;
+        color: white;
+    }
+    
+    div#menu > .menu-button{
+        display: flex;
+        gap: 4px;
+
+        color: white;
+        align-items: center;
+
+    }
+
+    /* Download Button Properties */
+    div#download-button{
+        display: flex;
+        padding: 6px 12px 6px 12px;
+        gap: 4px;
+
+        background-color: #00C8AA;
+        border-radius: 16px;
+        color: white;
+
+        align-items: center;
+
+    }
