@@ -58,6 +58,7 @@ html{
     div.menu-bar{
         display: block;
         justify-content: center;
+
     }
 
     div#menu{
@@ -81,7 +82,7 @@ html{
         div#menu-font{
             display: flex;
             width: fit-content;
-            margin-top: 8px;
+            margin: 8px auto auto auto;
             padding: 6px 12px 6px 12px;
             gap: 12px;
             
