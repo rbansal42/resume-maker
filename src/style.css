@@ -13,7 +13,8 @@ html{
     display: flex;
     position: sticky;
 
-    flex: row nowrap;
+    flex-direction: row;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: flex-start;
 
@@ -52,8 +53,13 @@ html{
     div.logo img{
         height: 40px;
     }
+    /* Menu Bar properties */
 
-    /* Download Button Properties */
+    div.menu-bar{
+        display: block;
+        justify-content: center;
+    }
+
     div#menu{
         display: flex;
         padding: 6px 12px 6px 12px;
@@ -64,14 +70,35 @@ html{
         color: white;
     }
     
-    div#menu > .menu-button{
-        display: flex;
-        gap: 4px;
+        div#menu > .menu-button{
+            display: flex;
+            gap: 4px;
 
-        color: white;
-        align-items: center;
+            color: white;
+            align-items: center;
 
-    }
+        }
+        div#menu-font{
+            display: flex;
+            width: fit-content;
+            margin-top: 8px;
+            padding: 6px 12px 6px 12px;
+            gap: 12px;
+            
+
+            background-color: #425061;
+            border-radius: 16px;
+            color: white;
+        }
+        
+        div#menu-font> .font-button{
+            display: flex;
+            gap: 4px;
+
+            color: white;
+            align-items: center;
+
+        }
 
     /* Download Button Properties */
     div#download-button{
