@@ -11,7 +11,7 @@
         <div class="header">
             <!-- Logo Div -->
             <div class="logo" id="logo">
-                    <a href="http://127.0.0.1:5500/index.html" id="logo">
+                    <a href="index.html" id="logo">
                         <img src="./res/icons/logo.svg" alt="Resumify" id="logo"">
                         RESUMIFY
                     </a>
@@ -68,11 +68,30 @@
         </div>
     </header>
     <div id="sidebar">
-        <div id="side-button">
+        <div id="side-button" class="side-buttons">
             My<br> content
         </div>
+        <button type="submit" id="print" class="side-buttons">Print</button>
     </div>
-    <main>
+    <main id="main">
+        <style>
+            @media print {
+            body * {
+                visibility: hidden;
+            }
+            #page-div * {
+                visibility: visible;
+            }
+            #page-div {
+                position: absolute;
+                left: 0;
+                top: 0;
+                margin: 0;
+                /* scale: 1.2;  */
+
+            }
+            }
+        </style>
         <article id="page-div">
             <!--  -->
             <!-- Left Column Starts -->
@@ -380,4 +399,5 @@
         </article>
     </main>
 </body>
+<script src="src/script.js"></script>
 </html>

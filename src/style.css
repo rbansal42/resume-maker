@@ -6,6 +6,23 @@ html{
     font-family: 'Ubuntu', sans-serif;
 }
 
+@media print {
+    html {
+       visibility: hidden;
+       background-color: white;
+    }
+    main {
+        visibility: hidden;
+        /* width: 100%; */
+        height: fit-content;
+        border: black solid 3;
+    }
+    article#page-div {
+        visibility: visible;
+        background-color: #00C8AA;
+        margin: auto;
+    }
+ }
 
 /* Header Elements */
 .header{
@@ -78,6 +95,15 @@ html{
             align-items: center;
 
         }
+        div#menu > .menu-button:hover{
+            display: flex;
+            gap: 4px;
+
+            color: #00C8AA;
+            align-items: center;
+
+            transition: ease-in 150ms;
+        }
         div#menu-font{
             display: flex;
             width: fit-content;
@@ -131,23 +157,38 @@ html{
 
 div#sidebar{
     display: flex;
+    flex-direction: column;
     position: fixed;
     margin: -10% 0 auto 0;
     left: 12;
     color: white;
     height: 100%;
-    align-items: center;
-
+    /* align-items: center; */
+    justify-content: center;
     text-align: center;
+
+    gap: 12px;
 }
 
-div#side-button{
+.side-buttons{
     background-color: #425061;
     padding: 12px 6px 12px 6px;
-    font-size: 11px;
+    font-size: 13px;
     
+    color: white;
     border: none;
     border-radius: 8px;
+}
+.side-buttons:hover{
+    background-color: #425061;
+    padding: 12px 6px 12px 6px;
+    font-size: 13px;
+    
+    color: #00C8AA;
+    border: none;
+    border-radius: 8px;
+
+    transition: ease-in 150ms;
 }
 
 /* Main */
@@ -161,11 +202,11 @@ main{
 }
 article#page-div{
     display: flex;
-    margin: 48px auto auto auto;
-    width: 595px; height: 842px;
+    margin: 32px auto auto auto;
+    width: 595px; height: 856px;
     background-color: white;
     padding: 6px;
-    gap: 6px
+    gap: 26px
 }
 
 div.column{
@@ -181,8 +222,8 @@ div.column{
 }
 
 div.column#column1{
-    width: 25%;
-    padding-left: 12px;
+    width: 29%;
+    padding-left: 18px;
     padding-right: 12px;
 }
 div.column#column2{
@@ -281,7 +322,7 @@ div#intro{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 6px;
+    padding: 6px 15px;
     gap: 3px;
 
     height: fit-content;
