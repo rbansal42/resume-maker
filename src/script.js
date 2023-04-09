@@ -9,4 +9,4 @@ function printout() {
     }, 500);
 }
 
-document.getElementById("print").addEventListener("click", printout);
+document.getElementById("download-button").addEventListener("click", printout);

@@ -228,6 +228,7 @@ div.column#column1{
 }
 div.column#column2{
     width: 70%;
+    padding-right: 24px;
 }
 
 div#profile-picture{
@@ -239,6 +240,18 @@ div#profile-picture{
     /* height: 100%; */
     width: 100px;
     border-radius: 80px;
+
+    transition: ease 150ms;
+}
+#profile-picture>img:hover{
+    /* height: 100%; */
+    width: 120px;
+    border-radius: 80px;
+
+    box-shadow: 1px 2px 1px 1px #00C8AA;
+    border-radius: 80px;
+
+    transition: ease 150ms;
 }
 
 div#basic-info{
