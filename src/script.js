@@ -10,3 +10,23 @@ function printout() {
 }
 
 document.getElementById("download-button").addEventListener("click", printout);
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    function showOverlay(){
+        const overlay = document.querySelector(".overlay");
+        
+        // menu.style.height = "100%";
+        // menu.style.width = "100%";
+        overlay.style.visibility = "visible";
+        overlay.style.left = "0";
+    }
+    function closeMenu(){
+        const menu = document.querySelector(".overlay")
+        overlay.style.visibility = "hidden"
+    }
+
+    document.getElementById("side-button").addEventListener("click", showOverlay);
+    document.getElementById("close-menu").addEventListener("click", closeMenu);
+    addClickToMenuItems();
+})
