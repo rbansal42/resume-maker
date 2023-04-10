@@ -20,6 +20,18 @@
     transition: ease-in-out 200ms;
 }
 
+.overlay #close-menu{
+    position: absolute;
+    right: 0;
+
+    background-color: #313B47;
+    color: white;
+    border: none;
+    margin: 3px;
+    padding: 6px 12px 6px 12px;
+    border-radius: 6px;
+}
+
 ::-webkit-scrollbar{
     width: 0px;
 }

@@ -21,12 +21,13 @@ document.addEventListener("DOMContentLoaded", function(){
         overlay.style.visibility = "visible";
         overlay.style.left = "0";
     }
-    function closeMenu(){
+    function closeOverlay(){
         const menu = document.querySelector(".overlay")
+        overlay.style.left = "-1000";
         overlay.style.visibility = "hidden"
     }
 
     document.getElementById("side-button").addEventListener("click", showOverlay);
-    document.getElementById("close-menu").addEventListener("click", closeMenu);
+    document.getElementById("close-menu").addEventListener("click", closeOverlay);
     addClickToMenuItems();
 })
