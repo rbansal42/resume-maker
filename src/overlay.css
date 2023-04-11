@@ -30,6 +30,16 @@
     margin: 3px;
     padding: 6px 12px 6px 12px;
     border-radius: 6px;
+    
+    transition: ease-in 150ms;
+    
+}
+
+.overlay #close-menu:hover{
+    padding: 6px 18px 6px 18px;
+    border: #00C8AA solid 1px;
+
+    transition: ease-in 150ms;
 }
 
 ::-webkit-scrollbar{
@@ -44,18 +54,37 @@
     padding: 8px 16px 16px 16px;
     gap: 10px;
 
-    width: 10%;
+    width: fit-content;
     height: fit-content;
 
     background-color: #313B47;
-    overflow-y: scroll;
 }
 
 #navigation-icons{
     display: flex;
     flex-direction: column;
     
+    gap: 8px;
+}
+
+.navigation-icon{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 4px;
+
     gap: 16px;
+}
+.navigation-icon:hover{
+    display: flex;
+    flex-direction: column;
+    
+    background: #425061;
+    /* border: #00C8AA solid 1px; */
+    border-radius: 4px;
+
+    transition: ease-in 150ms;
+
 }
 
 .overlay-form{
@@ -139,12 +168,27 @@
     padding: 12px;
     transition: ease 150ms;
 }
+.overlay-form-input:hover {
+    /* box-sizing: border-box; */
+    width: 90%;
+
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+    background: none;
+    border-radius: 8px;
+    border: 1px solid #00C8AA;
+    padding: 12px;
+    transition: ease 150ms;
+}
 
 .overlay-form-input:focus{
     
     outline: none;
-    border: none;
     
-    border: 1.5px solid #00C8AA;
+    border: 2px solid #00C8AA;
     transition: ease-in 150ms;
 }
