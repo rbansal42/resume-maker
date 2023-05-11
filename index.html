@@ -120,6 +120,10 @@
                         <label for="mobile">Mobile</label>
                         <input type="text" name="mobile" id="input-mobile" class="overlay-form-input" onkeyup="updateLabel()">
                     </div>
+                    <div class="label-input-container">
+                        <label for="location">Location</label>
+                        <input type="text" name="location" id="input-location" class="overlay-form-input" onkeyup="updateLabel()">
+                    </div>
                 </div>
             </div>
             <div class="overlay-form-category" id="socials">
@@ -127,25 +131,21 @@
                 <div class="overlay-form-input-label">
                     <div class="label-input-container">
                         <label for="linkedin">LinkedIn</label>
-                        <input type="text" name="linkedin" id="linkedin" class="overlay-form-input">
+                        <input type="text" name="linkedin" id="input-linkedin" class="overlay-form-input" onkeyup="updateLabel()">
                     </div>
                     <div class="label-input-container">
                         <label for="github">GitHub</label>
-                        <input type="text" name="github" id="github" class="overlay-form-input">
-                    </div>
-                    <div class="label-input-container">
-                        <label for="instagram">Instagram</label>
-                        <input type="text" name="instagram" id="instagram" class="overlay-form-input">
+                        <input type="text" name="github" id="input-github" class="overlay-form-input" onkeyup="updateLabel()">
                     </div>
                 </div>
             </div>
-            <div class="overlay-form-category" id="basics">
-                <h2>Basics</h2>
+            <div class="overlay-form-category" id="basics2">
+                <h2>More Basics</h2>
                 <div class="overlay-form-input-label">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="overlay-form-input">
-                    <label for="dob">Date of Birth</label>
-                    <input type="text" name="dob" id="dob" class="overlay-form-input">
+                    <label for="job-title">Title</label>
+                    <input type="text" name="job-title" id="input-title" class="overlay-form-input" onkeyup="updateLabel()">
+                    <label for="summary">Summary</label>
+                    <input type="text" name="summary" id="input-summary" class="overlay-form-input" onkeyup="updateLabel()">
                 </div>
             </div>
             <div class="overlay-form-category" id="basics">
@@ -210,15 +210,17 @@
                     </div>
                     <div class="item" id="location">
                         <img src="./res/icons/socials/location.svg" alt="Location">
-                        Gurugram, India
+                        <span id="output-location">
+                            Gurugram, India
+                        </span>
                     </div>
                     <div class="item" id="linkedin">
                         <img src="./res/icons/socials/linkedin.svg" alt="LinkedIn">
-                        rbansal42
+                        <span id="output-linkedin">rbansal42</span>
                     </div>
                     <div class="item" id="github">
                         <img src="./res/icons/socials/GitHub.svg" alt="GitHub">
-                        rbansal42
+                        <span id="output-github">rbansal42</span>
                     </div>
                 </div>
                 <div id="soft-skills" class="left-category">
@@ -307,10 +309,10 @@
                     <div id="output-name">
                         Rahul Bansal
                     </div>
-                    <div id="title">
+                    <div id="output-title">
                         Full Stack Web Developer
                     </div>
-                    <div id="summary">
+                    <div id="output-summary">
                         A student of modern-day technology who believes in learning by doing with a demonstrated history of being 
                         a quick learner and a team player. 
                     </div>

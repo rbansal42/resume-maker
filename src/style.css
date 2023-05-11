@@ -352,7 +352,7 @@ div#name{
     font-size: 22px;
 }
 
-div#title{
+div#output-title{
     box-sizing: border-box;
 
     display: flex;
@@ -362,7 +362,7 @@ div#title{
     padding: 3px 3px 3px 0px;
     border-bottom: solid white 0.6px;
 }
-div#summary{
+div#output-summary{
     box-sizing: border-box;
 
     display: flex;

@@ -5,7 +5,6 @@ function printout() {
     newWindow.document.write(document.getElementById("main").innerHTML);
     setTimeout(() => {
         newWindow.print();
-        
     }, 500);
 }
 
