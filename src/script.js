@@ -29,5 +29,5 @@ document.addEventListener("DOMContentLoaded", function(){
 
     document.getElementById("side-button").addEventListener("click", showOverlay);
     document.getElementById("close-menu").addEventListener("click", closeOverlay);
-    addClickToMenuItems();
+    // addClickToMenuItems();
 })

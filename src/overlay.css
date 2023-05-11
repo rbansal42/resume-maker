@@ -55,7 +55,8 @@
     gap: 10px;
 
     width: fit-content;
-    height: fit-content;
+    height: 100%;
+    /* height: fit-content; */
 
     background-color: #313B47;
 }
@@ -63,6 +64,7 @@
 #navigation-icons{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
     gap: 8px;
 }
@@ -132,7 +134,18 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    
+    height: fit-content;
+    width: 95%;
+    gap: 6px;
+    /* padding: 0px 0px 0px 0px; */
+    border-radius: 0px;
+    justify-content: center;
+}
+
+.overlay-form-input-label .label-input-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     
     height: fit-content;
     width: 100%;
@@ -154,14 +167,14 @@
 }
 .overlay-form-input{
     /* box-sizing: border-box; */
-    width: 90%;
+    width: 100%;
 
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #FFFFFF;
+    color: #ffffff60;
     background: none;
     border-radius: 8px;
     border: 1px solid #989DA6;
@@ -170,14 +183,14 @@
 }
 .overlay-form-input:hover {
     /* box-sizing: border-box; */
-    width: 90%;
+    width: 100%;
 
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     background: none;
     border-radius: 8px;
     border: 1px solid #00C8AA;
@@ -191,4 +204,5 @@
     
     border: 2px solid #00C8AA;
     transition: ease-in 150ms;
+    color: #fff;
 }

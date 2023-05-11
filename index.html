@@ -106,19 +106,37 @@
             <div class="overlay-form-category" id="basics">
                 <h2>Basics</h2>
                 <div class="overlay-form-input-label">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="input-name" class="overlay-form-input" onkeyup="updateLabel()">
-                    <label for="dob">Date of Birth</label>
-                    <input type="text" name="dob" id="dob" class="overlay-form-input">
+                    <div class="label-input-container">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="input-name" class="overlay-form-input" onkeyup="updateLabel()">
+                    </div>
+                </div>
+                <div class="overlay-form-input-label">
+                    <div class="label-input-container">
+                        <label for="email">Email</label>
+                        <input type="text" name="email" id="input-email" class="overlay-form-input" onkeyup="updateLabel()">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="mobile">Mobile</label>
+                        <input type="text" name="mobile" id="mobile" class="overlay-form-input" onkeyup="updateLabel()">
+                    </div>
                 </div>
             </div>
-            <div class="overlay-form-category" id="basics">
-                <h2>Basics</h2>
+            <div class="overlay-form-category" id="socials">
+                <h2>Socials</h2>
                 <div class="overlay-form-input-label">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="overlay-form-input">
-                    <label for="dob">Date of Birth</label>
-                    <input type="text" name="dob" id="dob" class="overlay-form-input">
+                    <div class="label-input-container">
+                        <label for="linkedin">LinkedIn</label>
+                        <input type="text" name="linkedin" id="linkedin" class="overlay-form-input">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="github">GitHub</label>
+                        <input type="text" name="github" id="github" class="overlay-form-input">
+                    </div>
+                    <div class="label-input-container">
+                        <label for="instagram">Instagram</label>
+                        <input type="text" name="instagram" id="instagram" class="overlay-form-input">
+                    </div>
                 </div>
             </div>
             <div class="overlay-form-category" id="basics">
@@ -180,11 +198,15 @@
                 <div id="basic-info">
                     <div class="item" id="email">
                         <img src="./res/icons/socials/email.svg" alt="Email">
-                        00082.rahul@gmail.com
+                        <span id="output-email">
+                            00082.rahul@gmail.com
+                        </span>
                     </div>
                     <div class="item" id="phone">
                         <img src="./res/icons/socials/phone.svg" alt="Phone">
-                        9667545342
+                        <span id="output-phone">
+                            9667545342
+                        </span>
                     </div>
                     <div class="item" id="location">
                         <img src="./res/icons/socials/location.svg" alt="Location">
