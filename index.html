@@ -107,11 +107,13 @@
                 <h2>Basics</h2>
                 <div class="overlay-form-input-label">
                     <div class="label-input-container">
+                        <label for="img">Image URL</label>
+                        <input type="text" name="img" id="input-dp" class="overlay-form-input" onkeyup="updateLabel()">
+                    </div>
+                    <div class="label-input-container">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="input-name" class="overlay-form-input" onkeyup="updateLabel()">
                     </div>
-                </div>
-                <div class="overlay-form-input-label">
                     <div class="label-input-container">
                         <label for="email">Email</label>
                         <input type="text" name="email" id="input-email" class="overlay-form-input" onkeyup="updateLabel()">
@@ -193,7 +195,7 @@
             <!--  -->
             <div class="column" id="column1">
                 <div id="profile-picture">
-                    <img src="https://i.ibb.co/mTpj8JJ/Professional-Image-optimised.jpg" alt="Display Picture">
+                    <img src="https://i.ibb.co/GnSBVpY/Professional-Photo.jpg" alt="Display Picture" id="output-dp">
                 </div>
                 <div id="basic-info">
                     <div class="item" id="email">
