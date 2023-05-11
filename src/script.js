@@ -15,16 +15,25 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function showOverlay(){
         const overlay = document.querySelector(".overlay");
+        const resume = document.querySelector("article#page-div");
         
         // menu.style.height = "100%";
         // menu.style.width = "100%";
         overlay.style.visibility = "visible";
         overlay.style.left = "0";
+
+        resume.style.position = "absolute";
+        resume.style.right = "64px";
     }
     function closeOverlay(){
         const menu = document.querySelector(".overlay")
+        const resume = document.querySelector("article#page-div");
+
         overlay.style.left = "-1000";
         overlay.style.visibility = "hidden"
+
+        resume.style.position = "inherit";
+        resume.style.right = "null";
     }
 
     document.getElementById("side-button").addEventListener("click", showOverlay);

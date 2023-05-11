@@ -203,6 +203,8 @@ main{
 }
 article#page-div{
     display: flex;
+    position: inherit;
+    /* right: 64px; */
     margin: 32px auto auto auto;
     width: 595px; height: 856px;
     background-color: white;
