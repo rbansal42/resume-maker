@@ -1,17 +1,7 @@
-function printout() {
-
-    var newWindow = window.open();
-    newWindow.document.write('<link rel="stylesheet" href="./src/style.css">');
-    newWindow.document.write(document.getElementById("main").innerHTML);
-    setTimeout(() => {
-        newWindow.print();
-    }, 500);
-}
-
-document.getElementById("download-button").addEventListener("click", printout);
 
 document.addEventListener("DOMContentLoaded", function(){
 
+    // Opening overlay
     function showOverlay(){
         const overlay = document.querySelector(".overlay");
         const resume = document.querySelector("article#page-div");
@@ -24,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
         resume.style.position = "absolute";
         resume.style.right = "64px";
     }
+    // Closing overlay
     function closeOverlay(){
         const menu = document.querySelector(".overlay")
         const resume = document.querySelector("article#page-div");
@@ -35,7 +26,21 @@ document.addEventListener("DOMContentLoaded", function(){
         resume.style.right = "null";
     }
 
-    document.getElementById("side-button").addEventListener("click", showOverlay);
-    document.getElementById("close-menu").addEventListener("click", closeOverlay);
-    // addClickToMenuItems();
+    
+    // Function to print resume as PDF
+    function printout() {
+
+        var newWindow = window.open();
+        newWindow.document.write('<link rel="stylesheet" href="./src/style.css">');
+        newWindow.document.write(document.getElementById("main").innerHTML);
+        setTimeout(() => {
+            newWindow.print();
+        }, 500);
+    }
+
+    // Calling functions for corresponding buttons
+    document.getElementById("side-button").addEventListener("click", showOverlay); // opening overlay
+    document.getElementById("close-menu").addEventListener("click", closeOverlay); // closing overlay
+    document.getElementById("download-button").addEventListener("click", printout); // printing to pdf
+
 })
